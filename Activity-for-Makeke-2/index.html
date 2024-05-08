@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Age Verification Pop Up Window</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<style>
+    @media screen and (max-width: 768px) {
+        .modal-content {
+            width: 90%;
+            max-width: 90%;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .modal-content {
+            width: 95%;
+            max-width: 95%;
+        }
+    }
+</style>
+</head>
+<body>
+  <div id="ageVerificationModal" class="modal">
+      <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <p>To purchase this product you must be over the age of 18!</p>
+
+          <button onclick="verifyAge()">I am over 18</button>
+          <button onclick="goBack()">Back to items</button>
+      </div>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
